@@ -12,7 +12,6 @@
   "build": {
     "appId": "com.afzalismail.invoicingapp",
     "productName": "InvoicingApp",
-
     "directories": {
       "output": "dist"
     },
@@ -26,7 +25,6 @@
     "win": {
       "target": "nsis"
     },
-
     "publish": {
       "provider": "github",
       "owner": "AfzalIsmail",
@@ -36,6 +34,7 @@
   "author": "Afzal Ismail",
   "license": "ISC",
   "dependencies": {
+    "electron-log": "^5.4.3",
     "electron-updater": "^6.8.3",
     "express": "^5.2.1",
     "pdfkit": "^0.17.2"
