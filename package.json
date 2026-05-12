@@ -1,14 +1,49 @@
 {
-  "name": "invoicing",
+  "name": "invoicing-app",
   "version": "1.0.0",
   "description": "Invoicing app",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder",
+    "publish": "electron-builder --publish always"
   },
-  "author": "",
+  "build": {
+    "appId": "com.afzalismail.invoicingapp",
+    "productName": "InvoicingApp",
+
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": "nsis"
+    },
+
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "AfzalIsmail",
+        "repo": "invoicing"
+      }
+    ]
+  },
+  "author": "Afzal Ismail",
   "license": "ISC",
   "dependencies": {
+    "electron-updater": "^6.8.3",
+    "express": "^5.2.1",
     "pdfkit": "^0.17.2"
+  },
+  "devDependencies": {
+    "electron": "^42.0.1",
+    "electron-builder": "^26.8.1"
   }
 }
