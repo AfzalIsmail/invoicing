@@ -27,14 +27,11 @@
       "target": "nsis"
     },
 
-    "publish": [
-      {
-        "provider": "github",
-        "owner": "AfzalIsmail",
-        "repo": "invoicing",
-        "releaseType": "release"
-      }
-    ]
+    "publish": {
+      "provider": "github",
+      "owner": "AfzalIsmail",
+      "repo": "invoicing"
+    }
   },
   "author": "Afzal Ismail",
   "license": "ISC",
