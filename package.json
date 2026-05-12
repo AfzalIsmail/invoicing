@@ -31,7 +31,8 @@
       {
         "provider": "github",
         "owner": "AfzalIsmail",
-        "repo": "invoicing"
+        "repo": "invoicing",
+        "releaseType": "release"
       }
     ]
   },
